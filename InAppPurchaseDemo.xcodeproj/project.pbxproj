@@ -12,6 +12,7 @@
 		5CDAF6992233850B00CFFADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAF6972233850B00CFFADD /* Main.storyboard */; };
 		5CDAF69B2233851000CFFADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAF69A2233851000CFFADD /* Assets.xcassets */; };
 		5CDAF69E2233851000CFFADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAF69C2233851000CFFADD /* LaunchScreen.storyboard */; };
+		5CDAF6A72233870700CFFADD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDAF6A62233870700CFFADD /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5CDAF69A2233851000CFFADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CDAF69D2233851000CFFADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CDAF69F2233851000CFFADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDAF6A62233870700CFFADD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDAF6A72233870700CFFADD /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				5CDAF6922233850B00CFFADD /* InAppPurchaseDemo */,
 				5CDAF6912233850B00CFFADD /* Products */,
+				5CDAF6A52233870700CFFADD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				5CDAF69F2233851000CFFADD /* Info.plist */,
 			);
 			path = InAppPurchaseDemo;
+			sourceTree = "<group>";
+		};
+		5CDAF6A52233870700CFFADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDAF6A62233870700CFFADD /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					5CDAF68F2233850B00CFFADD = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
