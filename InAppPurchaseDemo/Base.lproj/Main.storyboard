@@ -38,10 +38,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0l-Ig-kJ9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ona-GA-PrK"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="hDT-a1-SRY">
+                                        <barButtonItem key="rightBarButtonItem" title="Restore" id="rqT-Mc-ePP">
+                                            <connections>
+                                                <action selector="restorePressed:" destination="BYZ-38-t0r" id="XhP-no-mT5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u9q-2q-L8Z" firstAttribute="top" secondItem="zaC-cO-GYK" secondAttribute="bottom" constant="100" id="GlL-GP-8kT"/>
+                            <constraint firstItem="s0l-Ig-kJ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QlB-wf-moz"/>
+                            <constraint firstItem="s0l-Ig-kJ9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jzd-z5-4x3"/>
+                            <constraint firstItem="s0l-Ig-kJ9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pFN-8L-CeW"/>
                             <constraint firstItem="zaC-cO-GYK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="smW-g5-CT1"/>
                             <constraint firstItem="u9q-2q-L8Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x9c-xj-ivA"/>
                             <constraint firstItem="u9q-2q-L8Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y34-g8-jOS"/>

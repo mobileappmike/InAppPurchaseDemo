@@ -41,9 +41,17 @@ class ViewController: UIViewController, SKPaymentTransactionObserver {
                 purchaseLabel.text = "Purchase Completed!"
             } else if transaction.transactionState == .failed {
                 print("Transaction Failed")
+            } else if transaction.transactionState == .restored {
+                print("restored")
+                purchaseLabel.text = "Purchase Restored!"
             }
         }
     }
+    
+    @IBAction func restorePressed(_ sender: Any) {
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
+    
 
 }
 
